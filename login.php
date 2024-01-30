@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     
     // On authentifie l'utilisateur
     $authenticated = false;
-    if ($email=='admin@example.com' && $password=='Secur1ty') {
+    if ($email=='admin@example.com' && $password=='moi') {
         $authenticated = true;
         
         // On enregistre son identité en session.
@@ -36,35 +36,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="login.css">
         <title>Page de connexion</title>
  <style>
-        body {
-            background-image: url('https://wallpapercave.com/wp/wp2406611.jpg');
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
 
-        h1 {
-            font-size: 3rem;
-            margin-top: 30vh;
-            color: white;
-        }
-
-        button {
-            font-size: 1.5rem;
-            padding: 10px 20px;
-            cursor: pointer;
-            background-color: transparent;
-            border: 2px solid white;
-            color: white;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            background-color: black;
-            color: white
-        }
     </style>
 
     </head>

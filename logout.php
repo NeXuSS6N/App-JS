@@ -3,5 +3,5 @@
 session_start();
 
 unset($_SESSION['identity']);
-header('Location: index.php');
+header('Location: deco.php');
 exit;
